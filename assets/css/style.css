@@ -1,42 +1,84 @@
-body{
-    background-color:#878744;
+@charset "utf-8";
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Walter+Turncoat');
+
+body {
+    background-image: url('../images/background/cloudy-day.png');
 }
 
+.rock {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.jumbotron {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-right:30px;
-    padding-left:30px;
+p {
+    font-family: 'Walter Turncoat', cursive;
+}
 
+.page-title {
+    font-size: 400%;
 }
 
 .header {
-    background-color:#E4E4A5;
+    background-color: orange;
+    color: white;
+    font-family: 'Patrick Hand SC', cursive;
 }
-.header2 {
-    background-color: green;
-    margin-top:10px;
-    padding:20px;
 
+.main-content {
+    background-color: #f9e6cc;
+    padding: 30px;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
 }
-.header3{
-    background-color: blue;
-    margin-top: 10px;
+
+.main-content>p {
+    color: green;
+    font-weight: bold;
 }
-.header4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.random-digit {
+    background-color: #36BA6E;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
 }
-.header4 img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+.random-digit>p {
+    font-size: 120%;
+    color: black;
 }
-.header4 img:hover {
-    border: 3px solid red;
+
+.score-board {
+    background-color:#ADDDDB;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
 }
-.header5{
-    background-color: gray;
-    padding-top: 20px;
+
+.rock-img-container {
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+.total {
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    background-color: #00847d;
+    color: white;
+}
+
+.random-digit>p,
+.score-board>p,
+.total>p {
+    padding-top: 10px;
+}
+
+img:hover {
+    border: 2px solid red;
+}
+
+img:active {
+    opacity: 0.5;
 }
